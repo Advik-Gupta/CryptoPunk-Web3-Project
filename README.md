@@ -1,6 +1,6 @@
 This is a NFT project made using OpenSea, Thirdweb, MetaMask etc. It's like a NFT marketplace and showcases some NFT collections that were made with the help of Thirdweb
 
-Deployed App -> 
+Deployed App -> https://cryptopunk-web3-project.herokuapp.com/
 
 App designed by -> Clever Programmer (Youtube)
 
