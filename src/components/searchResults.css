@@ -1,0 +1,10 @@
+.searchResults {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.searchResults > div {
+	margin: 20px;
+}

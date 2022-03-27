@@ -4,7 +4,7 @@ import punkLogo from '../assets/header/cryptopunk-logo.png'
 import searchIcon from '../assets/header/search.png'
 import themeSwitchIcon from '../assets/header/theme-switch.png'
 
-function Header() {
+function Header({setsearchedTerm}) {
 	return (
         <div className="header">
             <div className="logoContainer">
@@ -14,7 +14,7 @@ function Header() {
                 <div className="searchIconContainer">
                     <img src={searchIcon} alt="" />
                 </div>
-                <input className="searchInput" placeholder='Search collection...' type="text" />
+                <input className="searchInput" placeholder='Search specific punks...' type="text" onChange={(e) => setsearchedTerm(e.target.value)} />
             </div>
             <div className="headerItems">
                 <p>Drops</p>
