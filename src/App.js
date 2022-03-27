@@ -16,13 +16,16 @@ function App() {
 	useEffect(() => {
 		let getMyNfts = async () => {
 			const openseaData = await axios.get(
-				'https://testnets-api.opensea.io/assets?asset_contract_address=0xb80409A31B53d3EF54dD9900eA84980cA2BE5eB5&order_direction=asc'
+				'https://testnets-api.opensea.io/assets?asset_contract_address=0xb80409A31B53d3EF54dD9900eA84980cA2BE5eB5&order_direction=asc',
+				{ headers: { 'Access-Control-Allow-Origin': true } }
 			);
 			const openseaDataApes = await axios.get(
-				'https://testnets-api.opensea.io/assets?asset_contract_address=0x4771fAB23a9ba5490bb126B1D6ef2c8300E300A8&order_direction=asc'
+				'https://testnets-api.opensea.io/assets?asset_contract_address=0x4771fAB23a9ba5490bb126B1D6ef2c8300E300A8&order_direction=asc',
+				{ headers: { 'Access-Control-Allow-Origin': true } }
 			);
 			const openseaDataAzuki = await axios.get(
-				'https://testnets-api.opensea.io/assets?asset_contract_address=0xe7a79e9438d94e06C261c8ef8Abcc27334e4d72E&order_direction=asc'
+				'https://testnets-api.opensea.io/assets?asset_contract_address=0xe7a79e9438d94e06C261c8ef8Abcc27334e4d72E&order_direction=asc',
+				{ headers: { 'Access-Control-Allow-Origin': true } }
 			);
 			setLists({
 				punkListData: openseaData.data.assets,
