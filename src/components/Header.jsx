@@ -14,7 +14,7 @@ function Header({setsearchedTerm}) {
                 <div className="searchIconContainer">
                     <img src={searchIcon} alt="" />
                 </div>
-                <input className="searchInput" placeholder='Search specific punks...' type="text" onChange={(e) => setsearchedTerm(e.target.value)} />
+                <input className="searchInput" placeholder='Search specific NFT...' type="text" onChange={(e) => setsearchedTerm(e.target.value)} />
             </div>
             <div className="headerItems">
                 <p>Drops</p>

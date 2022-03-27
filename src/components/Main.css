@@ -88,6 +88,21 @@
 	color: lightgray;
 }
 
+.price {
+	font-size: 20px;
+	margin-right: 3px;
+	font-weight: 400;
+}
+
+.priceContainer {
+	margin-bottom: 4px;
+}
+
+.infoType {
+	color: lightgray;
+	font-weight: 500;
+}
+
 /* _______________________________________________________________________________________________________________ */
 
 .selectedPunk {

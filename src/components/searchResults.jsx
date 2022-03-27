@@ -11,7 +11,6 @@ const SearchResults = ({punks, term}) => {
         const newPunks = punks.filter((punk) => {
             return punk.name.toLowerCase().includes(term) 
         })
-        console.log(newPunks)
         setallPunks(shuffleArray(newPunks))
     }, [punks, term])
     
